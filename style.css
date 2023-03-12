@@ -1,0 +1,78 @@
+@font-face{
+    font-family: "Caveat";
+    src: url(Caveat-Regular.ttf);
+}
+
+*{
+    font-family: "Caveat";
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.board{
+    margin-top: 15rem;
+    width: 15rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.board > div{
+    width: 5rem;
+    height: 5rem;
+    border: solid 1px black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+h1{
+    width: 10rem;
+    margin-left: 2rem;
+    margin-top: 6rem;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.nextTurn{
+    width: 5rem;
+    height: 5rem;
+    border: solid 1px black;
+    margin-top: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+}
+
+.nextTurn > samp{
+    position: relative;
+    top: -12px;
+    left: -7px;
+}
+
+.game--restart{
+    margin-top: 20rem;
+    margin-left: -10rem;
+    width: 10rem;
+    height: 3rem;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.game--restart:hover{
+    box-shadow: 5px 10px 10px rgb(167, 164, 164);
+}
+
